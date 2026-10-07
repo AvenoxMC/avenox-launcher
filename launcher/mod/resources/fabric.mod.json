@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "eaglerrelay",
+  "version": "1.0.0",
+  "name": "Eagler Relay",
+  "description": "Routes server connections through the Eagler Java Launcher's WebSocket relay, like the Eaglercraft browser client.",
+  "environment": "client",
+  "mixins": ["eaglerrelay.mixins.json"],
+  "depends": { "fabricloader": ">=0.16" }
+}

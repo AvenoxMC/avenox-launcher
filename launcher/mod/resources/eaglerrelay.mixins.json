@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "eaglerrelay.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["ConnectionMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

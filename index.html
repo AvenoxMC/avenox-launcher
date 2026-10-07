@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eagler Java Launcher</title>
+	<meta name="description" content="A lightweight, open-source Windows launcher for Minecraft: Java Edition with Microsoft account sign-in and performance mods.">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site">
+		<div class="wrap">
+			<a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Eagler Java Launcher</a>
+			<nav>
+				<a href="./" aria-current="page">Home</a>
+				<a href="privacy.html">Privacy</a>
+				<a href="https://github.com/AvenoxMC/avenox-launcher">Source code</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="wrap">
+		<div class="hero">
+			<h1>A small, fast launcher for Minecraft: Java Edition</h1>
+			<p class="lead">
+				Eagler Java Launcher is a free, open-source Windows app. It signs you in with your own Microsoft account,
+				downloads the official game files from Mojang, and starts the game with performance mods.
+			</p>
+			<div class="actions">
+				<a class="button primary" href="https://github.com/AvenoxMC/avenox-launcher/releases">Download for Windows</a>
+				<a class="button" href="https://github.com/AvenoxMC/avenox-launcher">View the source</a>
+			</div>
+		</div>
+
+		<section>
+			<h2>Features</h2>
+			<div class="grid">
+				<div class="card">
+					<h3>Microsoft account sign-in</h3>
+					<p>Standard Microsoft device-code sign-in (microsoft.com/link). The launcher never sees your password.</p>
+				</div>
+				<div class="card">
+					<h3>Official game files</h3>
+					<p>Minecraft, its libraries and the Java runtime are downloaded from Mojang's own servers and checked by SHA-1.</p>
+				</div>
+				<div class="card">
+					<h3>Performance</h3>
+					<p>Optional Fabric performance mods (Sodium, Lithium, FerriteCore…) from Modrinth and tuned Java settings.</p>
+				</div>
+				<div class="card">
+					<h3>Servers and resource packs</h3>
+					<p>Manages the multiplayer server list and installs resource packs from a link or a .zip file.</p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>How sign-in works</h2>
+			<ol class="steps">
+				<li>The launcher asks Microsoft for a short code and opens <code>microsoft.com/link</code>.</li>
+				<li>You sign in on Microsoft's page with the account that owns Minecraft: Java Edition.</li>
+				<li>The launcher exchanges the result with Xbox Live and Minecraft services to get your profile and a game token.</li>
+				<li>Tokens are stored encrypted for your Windows user (DPAPI) and only sent to Microsoft and Mojang.</li>
+			</ol>
+			<p class="note">
+				You need to own Minecraft: Java Edition. An optional username-only mode exists for offline-mode servers;
+				it cannot join online-mode servers and does not use Minecraft services.
+			</p>
+		</section>
+
+		<section>
+			<h2>Requirements</h2>
+			<div class="table-scroll">
+				<table>
+					<tr><th>System</th><td>Windows 10 or 11 (64-bit). No install: one <code>.exe</code> using the built-in .NET Framework 4.8.</td></tr>
+					<tr><th>Account</th><td>A Microsoft account that owns Minecraft: Java Edition.</td></tr>
+					<tr><th>Disk</th><td>About 1 GB for the game, Java runtime and assets.</td></tr>
+				</table>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site">
+		<div class="wrap">
+			<p>Eagler Java Launcher is a personal, non-commercial project.</p>
+			<p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
+			<p><a href="privacy.html">Privacy policy</a></p>
+		</div>
+	</footer>
+</body>
+</html>
